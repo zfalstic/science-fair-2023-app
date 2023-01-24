@@ -1,0 +1,21 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.age,
+.resting-blood-pressure,
+.cholesterol,
+.chest-pain-type,
+.sex,
+.fasting-blood-sugar,
+.rest-ecg,
+.max-heart-rate,
+.exercise-chest-pain,
+.old-peak {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
