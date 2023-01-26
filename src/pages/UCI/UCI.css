@@ -19,3 +19,12 @@
   align-items: center;
   height: 40px;
 }
+
+.age__field, 
+.resting-blood-pressure__field, 
+.cholesterol__field,
+.fasting-blood-sugar__field,
+.max-heart-rate__field,
+.old-peak__field {
+  width: min(20vw, 100px);
+}
