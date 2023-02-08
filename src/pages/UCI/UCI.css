@@ -1,6 +1,8 @@
 .input-form {
   display: flex;
   flex-direction: column;
+
+  padding: 20px;
 }
 
 .age,
@@ -9,22 +11,77 @@
 .chest-pain-type,
 .sex,
 .fasting-blood-sugar,
-.rest-ecg,
 .max-heart-rate,
-.exercise-chest-pain,
-.old-peak {
+.exercise-chest-pain {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 40px;
+  margin-top: 10px;
+
+  font-family: monospace;
+  font-size: 15px;
 }
 
-.age__field, 
-.resting-blood-pressure__field, 
+.age__field,
+.resting-blood-pressure__field,
 .cholesterol__field,
 .fasting-blood-sugar__field,
-.max-heart-rate__field,
-.old-peak__field {
+.max-heart-rate__field {
   width: min(20vw, 100px);
+  height: 30px;
+
+  font-family: monospace;
+  font-size: 15px;
+
+  line-height: 30px;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #000000;
+
+  outline: none;
+  margin: 0;
+  border: none;
+}
+
+.sex__select,
+.chest-pain-type__select,
+.exercise-chest-pain__select {
+  width: 99px;
+  height: 38px;
+
+  font-family: monospace;
+  font-size: 15px;
+
+  line-height: 30px;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #000000;
+
+  outline: none;
+  margin: 0;
+  border: none;
+}
+
+.submit__button {
+  margin-top: 20px;
+  height: 30px;
+
+  font-family: monospace;
+  font-size: 15px;
+
+  line-height: 30px;
+  background: #fafafa;
+  box-shadow: inset 0 1px 3px 0 rgb(0 0 0 / 8%);
+  border-radius: 5px;
+  font-size: 16px;
+  color: #666;
+
+  outline: none;
+  border: none;
 }

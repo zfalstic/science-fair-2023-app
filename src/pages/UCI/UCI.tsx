@@ -1,8 +1,10 @@
 import React from "react";
-
 import "./UCI.css";
 
+import { predict } from "./model";
+
 export default function UCI() {
+  predict();
   return (
     <div>
       <form className="input-form">
@@ -42,16 +44,6 @@ export default function UCI() {
           </p>
           <input className="fasting-blood-sugar__field" type="text"></input>
         </label>
-        <label className="rest-ecg">
-          <p className="rest-ecg__text">Resting ECG Type:</p>
-          <select className="rest-ecg__select">
-            <option value="normal">Normal</option>
-            <option value="st-t-abnormality">ST-T wave abnormailty</option>
-            <option value="left-ventricular-hypertrophy">
-              Left Ventricular Hypertrophy
-            </option>
-          </select>
-        </label>
         <label className="max-heart-rate">
           <p className="max-heart-rate__text">Maximum Heart Rate:</p>
           <input className="max-heart-rate__field" type="text"></input>
@@ -63,11 +55,7 @@ export default function UCI() {
             <option value="no">No</option>
           </select>
         </label>
-        <label className="old-peak">
-          <p className="old-peak__text">ST Depression Relative to Rest:</p>
-          <input className="old-peak__field" type="text"></input>
-        </label>
-        <button>Submit</button>
+        <button className="submit__button">Submit</button>
       </form>
     </div>
   );
